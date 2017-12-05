@@ -12,8 +12,8 @@ var h = window.innerHeight
 
 
 function setup() {
-
-    createCanvas(w,h);
+    var canv = createCanvas(w, h);
+    canv.parent("bgCanvas");
 
     snake = new Snake();
 
@@ -23,12 +23,12 @@ function setup() {
 
 function draw() {
 
-    background(0);
+    background(30);
     textAlign(RIGHT);
     textSize(12);
     fill(255);
-    text("Arrow keys to move", w-50, h-70);
-    text("Guide snake to buttons to redirect to page", w-50, h-50);
+    text("Arrow keys to move", w-50, h-120);
+    text("Guide snake to buttons to redirect to page", w-50, h-100);
     noStroke();
 
     snake.update();

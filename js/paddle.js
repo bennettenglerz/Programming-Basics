@@ -1,7 +1,7 @@
 function Paddle() {
   this.w = 160;
   this.h = 20;
-  this.pos = createVector(width / 2 - this.w / 2, height - 40);
+  this.pos = createVector(width / 2 - this.w / 2, height - 100);
   this.isMovingLeft = false;
   this.isMovingRight = false;
 

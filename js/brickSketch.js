@@ -15,7 +15,8 @@ var h = window.innerHeight
 || document.body.clientHeight;
 
 function setup() {
-  createCanvas(w, h);
+  var canv = createCanvas(w, h);
+  canv.parent("bgCanvas");
 
   paddle = new Paddle();
   ball = new Ball();
@@ -27,12 +28,12 @@ function setup() {
 }
 
 function draw() {
-  background(0);
+  background(30);
   textAlign(RIGHT);
   textSize(12);
   fill(255);
   if (!playingGame) {
-    text("S to start. Mouse or A + D keys to move", w-50, h-50);
+    text("S to start. Mouse to move", w-50, h-100);
   }
 
   // bricks
@@ -85,11 +86,7 @@ function keyReleased() {
 }
 
 function keyPressed() {
-  if (key === 'a' || key === 'A') {
-    paddle.isMovingLeft = true;
-  } else if (key === 'd' || key === 'D') {
-    paddle.isMovingRight = true;
-  } else if (key === 's' || key === 'S') {
+  if (key === 's' || key === 'S') {
     if (bricks.length === 0) {
       for (var i = 0; i < 20; i++) {
         bricks.push(new Brick());
