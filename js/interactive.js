@@ -1,4 +1,4 @@
-var going = true;
+var drawing = true;
 
 var w = window.innerWidth
 || document.documentElement.clientWidth
@@ -21,17 +21,24 @@ function setup() {
 }
 
 function draw() {
-  if(going) {
-  noStroke();
-  fill(120);
-  ellipse(pmouseX,pmouseY, 10, 10);
-  stroke(120);
-  line(pmouseX, pmouseY, mouseX, mouseY);
+  if (pmouseX == 0 && pmouseY == 0) {
+    noStroke();
+    fill(120);
+    ellipse(mouseX,mouseY, 10, 10);
+  }
+  else {
+    if(drawing) {
+      noStroke();
+      fill(120);
+      ellipse(pmouseX,pmouseY, 10, 10);
+      stroke(120);
+      line(pmouseX, pmouseY, mouseX, mouseY);
+    }
   }
 }
 
 function mousePressed() {
-  going = !going;
+  drawing = !drawing;
 }
 
 function keyTyped() {

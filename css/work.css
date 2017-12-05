@@ -37,3 +37,44 @@ a {
   background-image: url(../images/mazda.png);
   background-size: cover;
 }
+.boxes {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+}
+.cs {
+  position: relative;
+  left: 150px;
+  top: 144px;
+  width: 260px;
+  height: 110px;
+  color: #999999;
+}
+.cs:hover {
+  background-color: #191919;
+  color: white;
+}
+.ux {
+  position: relative;
+  top: 34px;
+  left: 510px;
+  width: 260px;
+  height: 110px;
+  color: #999999;
+}
+.ux:hover {
+  background-color: #191919;
+  color: white;
+}
+.pm {
+  position: relative;
+  top: -76px;
+  left: 870px;
+  width: 260px;
+  height: 110px;
+  color: #999999;
+}
+.pm:hover {
+  background-color: #191919;
+  color: white;
+}

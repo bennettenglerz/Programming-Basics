@@ -44,7 +44,7 @@ function draw() {
   fill(255);
   textAlign(RIGHT);
   textSize(12);
-  text("Arrow keys to move. Space to shoot", w-50, h-100);
+  text("W + A + D to move. Space to shoot", w-50, h-100);
 
   for(var i=0; i<allSprites.length; i++) {
   var s = allSprites[i];
@@ -58,11 +58,11 @@ function draw() {
 
   ship.bounce(asteroids);
 
-  if(keyDown(LEFT_ARROW))
+  if(keyDown("a"))
     ship.rotation -= 4;
-  if(keyDown(RIGHT_ARROW))
+  if(keyDown("d"))
     ship.rotation += 4;
-  if(keyDown(UP_ARROW))
+  if(keyDown("w"))
     {
     ship.addSpeed(.2, ship.rotation);
     ship.changeAnimation("thrust");
