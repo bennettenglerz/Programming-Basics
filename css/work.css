@@ -1,0 +1,39 @@
+a {
+  color: inherit;
+}
+.box {
+  top: 100px;
+  height: 300px;
+  text-align: center;
+}
+.innerBox {
+  height: 100%;
+  width: 90%;
+  background-color: white;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  padding-top: 110px;
+  border-radius: 10px;
+}
+.innerBox:hover {
+  opacity: .25;
+}
+.comic {
+  background-image: url(../images/comic.png);
+  background-size: cover;
+}
+.tetris {
+  background-image: url(../images/tetris.png);
+  background-size: contain;
+}
+.opus {
+  background-image: url(../images/opus.png);
+  background-size: contain;
+}
+.mazda {
+  padding-top: 80px;
+  color: white;
+  background-image: url(../images/mazda.png);
+  background-size: cover;
+}
