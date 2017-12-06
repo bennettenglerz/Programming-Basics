@@ -71,10 +71,10 @@ function Snake(){
 
     this.display = function(){
 
-        fill(0,255,0);
+        fill(120);
         rect(this.pos.x * this.scale, this.pos.y * this.scale, this.scale, this.scale);
 
-        fill(0,255,0);
+        fill(120);
 
         for(var i = 0; i < this.tail.length; i++){
 
@@ -82,7 +82,7 @@ function Snake(){
 
         }
 
-        fill(255,0,0);
+        fill(220, 220, 250);
 
         rect(this.food.x * this.scale, this.food.y * this.scale, this.scale, this.scale);
 
